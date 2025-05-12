@@ -40,7 +40,10 @@ android {
 }
 
 dependencies {
+    // Custom
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
 
+    // Default
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)

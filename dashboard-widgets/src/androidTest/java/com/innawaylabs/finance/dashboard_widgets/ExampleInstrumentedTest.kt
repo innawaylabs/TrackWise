@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.innawaylabs.finance.dashboard_widgets", appContext.packageName)
+        assertEquals("com.innawaylabs.finance.dashboard_widgets.test", appContext.packageName)
     }
 }
