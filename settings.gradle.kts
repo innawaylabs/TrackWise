@@ -20,6 +20,6 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "TrackWise"
-include(":app")
+include(":trackwise-app")
 include(":dashboard-framework")
 include(":dashboard-widgets")
