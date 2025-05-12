@@ -10,8 +10,6 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/dashboard-framework" />
-            <option value="$PROJECT_DIR$/dashboard-widgets" />
             <option value="$PROJECT_DIR$/trackwise-app" />
           </set>
         </option>
