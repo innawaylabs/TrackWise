@@ -41,6 +41,9 @@ android {
 
 dependencies {
     // Custom
+    implementation(project(":dashboard-framework"))
+    implementation(project(":dashboard-widgets"))
+
     implementation(libs.androidx.lifecycle.viewmodel.compose)
 
     // Default

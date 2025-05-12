@@ -33,7 +33,10 @@ android {
 }
 
 dependencies {
+    // Custom
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
 
+    // Default
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
