@@ -8,9 +8,10 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.innawaylabs.finance.dashboard_framework.DashboardWidget
 
-class TransactionListWidget : DashboardWidget {
-    override val id = "transaction_list"
-    override val displayName = "Transactions List"
+class SpendingSummaryWidget : DashboardWidget {
+
+    override val id = "spending_summary"
+    override val displayName = "Spending Summary"
 
     @Composable
     override fun Render() {
@@ -20,7 +21,7 @@ class TransactionListWidget : DashboardWidget {
                 .padding(16.dp) // Outer padding
         ) {
             Text(
-                text = stringResource(R.string.transaction_list_widget),
+                text = stringResource(R.string.spending_summary_widget),
                 modifier = androidx.compose.ui.Modifier
                     .padding(8.dp) // Inner padding
             )

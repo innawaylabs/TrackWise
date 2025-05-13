@@ -4,6 +4,6 @@ import com.innawaylabs.finance.dashboard_framework.DashboardWidget
 
 object WidgetRegistry {
     fun getRegisteredWidgets(): List<DashboardWidget> {
-        return listOf(TransactionListWidget())
+        return listOf(TransactionListWidget(), SpendingSummaryWidget(), AIInsightsWidget())
     }
 }

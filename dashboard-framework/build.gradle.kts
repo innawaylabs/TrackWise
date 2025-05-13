@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.kotlin.compose)
 }
 
 android {
@@ -12,6 +13,14 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
+    }
+
+    buildFeatures {
+        compose = true
+    }
+
+    composeOptions {
+        kotlinCompilerExtensionVersion = "2.0.0"
     }
 
     buildTypes {
@@ -33,7 +42,10 @@ android {
 }
 
 dependencies {
+    // Custom
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
 
+    // Default
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -42,4 +54,13 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+}
+
+configurations.all {
+    resolutionStrategy {
+        force(
+            "androidx.compose.foundation:foundation:${libs.versions.foundationAndroid.get()}",
+            "androidx.compose.runtime:runtime:${libs.versions.runtimeAndroid.get()}"
+        )
+    }
 }
