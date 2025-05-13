@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">dashboard-widgets</string>
+    <string name="ai_insights_widget">This is the AI Insights Widget</string>
+    <string name="spending_summary_widget">This is the Spending Summary Widget</string>
+    <string name="transaction_list_widget">This is the Transaction List Widget</string>
+</resources>
