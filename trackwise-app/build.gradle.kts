@@ -2,6 +2,8 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    id("dagger.hilt.android.plugin")
+    kotlin("kapt")
 }
 
 android {
@@ -43,8 +45,12 @@ dependencies {
     // Custom
     implementation(project(":dashboard-framework"))
     implementation(project(":dashboard-widgets"))
+    implementation(project(":transaction-module"))
 
     implementation(libs.androidx.lifecycle.viewmodel.compose)
+    implementation(libs.hilt.android)
+    kapt(libs.hilt.compiler)
+    implementation(libs.hilt.navigation.compose)
 
     // Default
     implementation(libs.androidx.core.ktx)
