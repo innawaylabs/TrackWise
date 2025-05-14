@@ -7,7 +7,9 @@ import androidx.activity.enableEdgeToEdge
 import com.innawaylabs.finance.dashboard_framework.DashboardHost
 import com.innawaylabs.finance.dashboard_widgets.WidgetRegistry
 import com.innawaylabs.finance.trackwise.ui.theme.TrackWiseTheme
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

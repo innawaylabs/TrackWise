@@ -17,9 +17,15 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
     }
+//    versionCatalogs {
+//        create("libs") {
+//            from(files("./gradle/libs.versions.toml"))
+//        }
+//    }
 }
 
 rootProject.name = "TrackWise"
 include(":trackwise-app")
 include(":dashboard-framework")
 include(":dashboard-widgets")
+include(":transaction-module")

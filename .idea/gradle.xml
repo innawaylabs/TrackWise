@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$/dashboard-framework" />
             <option value="$PROJECT_DIR$/dashboard-widgets" />
             <option value="$PROJECT_DIR$/trackwise-app" />
+            <option value="$PROJECT_DIR$/transaction-module" />
           </set>
         </option>
       </GradleProjectSettings>
