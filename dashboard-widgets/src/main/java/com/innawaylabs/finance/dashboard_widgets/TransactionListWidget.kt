@@ -3,6 +3,7 @@ package com.innawaylabs.finance.dashboard_widgets
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -36,11 +37,10 @@ class TransactionListWidget : DashboardWidget {
                         .padding(8.dp) // Inner padding
                 )
             }
-
             LazyColumn(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .weight(1f) // ✅ This ensures LazyColumn gets all available vertical space
+                    .height(500.dp)
             ) {
                 items(transactions.value.take(100)) { txn ->
                     Text("${txn.description} | $${txn.amount} | ${txn.category}")
